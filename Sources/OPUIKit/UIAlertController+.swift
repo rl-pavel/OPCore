@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import OPFoundation
 import UIKit
 
@@ -27,3 +28,4 @@ extension UIAlertController {
       }
     }
 }
+#endif

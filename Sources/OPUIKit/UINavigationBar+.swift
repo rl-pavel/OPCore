@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public extension UINavigationBar {
@@ -6,3 +7,4 @@ public extension UINavigationBar {
     shadowImage = isTransparent ? UIImage() : nil
   }
 }
+#endif

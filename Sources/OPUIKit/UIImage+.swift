@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public extension UIImage {
@@ -9,3 +10,4 @@ public extension UIImage {
     self.init(systemName: symbol, withConfiguration: configuration)
   }
 }
+#endif

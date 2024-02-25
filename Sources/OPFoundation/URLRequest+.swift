@@ -1,7 +1,7 @@
 import Foundation
 
 // This makes it possible to create an array [URLQueryItem] using a [String: String?] dictionary.
-extension Array: ExpressibleByDictionaryLiteral where Element == URLQueryItem {
+extension Array: @retroactive ExpressibleByDictionaryLiteral where Element == URLQueryItem {
   public init(dictionaryLiteral elements: (String, String?)...) {
     let queriesWithValue = elements.filter { $0.1 != nil }
     self.init(queriesWithValue.map { URLQueryItem(name: $0.0, value: $0.1) })

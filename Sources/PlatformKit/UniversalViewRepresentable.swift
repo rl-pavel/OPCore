@@ -1,4 +1,4 @@
-import Foundation
+import SwiftUI
 
 public protocol UniversalViewRepresentable: PlatformViewRepresentable {
   associatedtype ViewType: PlatformView

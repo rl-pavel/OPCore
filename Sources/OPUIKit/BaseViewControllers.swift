@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import OPFoundation
 import SwiftUI
 
@@ -35,7 +36,7 @@ open class ViewController: UIViewController {
     navigationController?.popViewController(animated: true)
   }
 }
-
+#endif
 
 
 // TODO: Is this needed anymore?

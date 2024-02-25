@@ -4,11 +4,13 @@ import PackageDescription
 // MARK: - Package
 
 let platformKit: BuildItem = .init(name: "PlatformKit")
+
 let OPFoundation: BuildItem = .init(name: "OPFoundation", dependencies: [platformKit])
-let OPCombine: BuildItem = .init(name: "OPCombine")
-let OPTypography: BuildItem = .init(name: "OPTypography", dependencies: [OPFoundation, platformKit])
-let OPSwiftUI: BuildItem = .init(name: "OPSwiftUI", dependencies: [OPFoundation, platformKit])
-let OPUIKit: BuildItem = .init(name: "OPUIKit")
+
+let OPCombine: BuildItem = .init(name: "OPCombine", dependencies: [OPFoundation])
+let OPTypography: BuildItem = .init(name: "OPTypography", dependencies: [OPFoundation])
+let OPSwiftUI: BuildItem = .init(name: "OPSwiftUI", dependencies: [OPFoundation])
+let OPUIKit: BuildItem = .init(name: "OPUIKit", dependencies: [OPFoundation])
 
 let items: [BuildItem] = [
   platformKit,

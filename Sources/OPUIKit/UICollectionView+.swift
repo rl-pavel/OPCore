@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public extension UICollectionView {
@@ -37,3 +38,4 @@ public extension UICollectionView {
 public extension IndexPath {
   static let zero = IndexPath(item: 0, section: 0)
 }
+#endif

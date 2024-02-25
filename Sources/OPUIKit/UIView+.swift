@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import OPFoundation
 import UIKit
 
@@ -72,3 +73,4 @@ public extension UIView {
     }
   }
 }
+#endif

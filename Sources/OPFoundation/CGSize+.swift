@@ -14,7 +14,7 @@ public extension CGSize {
 /// to more easily create square sizes.
 ///
 /// Example: `Color.red.frame(size: 50)`
-extension CGSize: ExpressibleByIntegerLiteral {
+extension CGSize: @retroactive ExpressibleByIntegerLiteral {
     public init(integerLiteral value: Int) {
         let size = CGFloat(value)
         self.init(size)

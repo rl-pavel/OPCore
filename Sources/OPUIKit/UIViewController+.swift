@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public extension UIViewController {
@@ -21,3 +22,4 @@ public extension UIViewController {
     navigationItem.backButtonDisplayMode = .minimal
   }
 }
+#endif

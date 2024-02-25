@@ -4,11 +4,14 @@ import SwiftUI
 @_exported import UIKit
 public typealias PlatformColor = UIColor
 public typealias PlatformFont = UIFont
+public typealias PlatformImage = UIImage
 public typealias PlatformFontDescriptor = UIFontDescriptor
+public typealias PlatformEdgeInsets = UIEdgeInsets
 
 public typealias PlatformViewRepresentable = UIViewRepresentable
 public typealias PlatformView = UIView
 public typealias PlatformViewController = UIViewController
+public typealias PlatformHostingController = UIHostingController
 public typealias PlatformApplication = UIApplication
 public typealias PlatformResponder = UIResponder
 public typealias PlatformTextView = UITextView
@@ -17,11 +20,14 @@ public typealias PlatformTextView = UITextView
 @_exported import AppKit
 public typealias PlatformColor = NSColor
 public typealias PlatformFont = NSFont
+public typealias PlatformImage = NSImage
 public typealias PlatformFontDescriptor = NSFontDescriptor
+public typealias PlatformEdgeInsets = NSEdgeInsets
 
 public typealias PlatformViewRepresentable = NSViewRepresentable
 public typealias PlatformView = NSView
 public typealias PlatformViewController = NSViewController
+public typealias PlatformHostingController = NSHostingController
 public typealias PlatformApplication = NSApplication
 public typealias PlatformResponder = NSResponder
 
