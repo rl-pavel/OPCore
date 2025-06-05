@@ -10,6 +10,12 @@ extension Optional: OptionalType {
     get { return self }
     mutating set { self = newValue }
   }
+  
+  public struct NilError: Error { }
+  public func get() throws -> Wrapped {
+    guard let self else { throw NilError() }
+    return self
+  }
 }
 extension OptionalType {
     public var isNil: Bool { optional == nil }

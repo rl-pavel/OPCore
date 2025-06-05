@@ -44,7 +44,8 @@ public extension View {
     minSize: CGSize? = nil,
     idealSize: CGSize? = nil,
     maxSize: CGSize? = nil,
-    alignment: Alignment = .center) -> some View {
+    alignment: Alignment = .center
+  ) -> some View {
       frame(
         minWidth: minSize?.width,
         idealWidth: idealSize?.width,
@@ -53,7 +54,7 @@ public extension View {
         idealHeight: idealSize?.height,
         maxHeight: maxSize?.height,
         alignment: alignment)
-    }
+  }
   
   func overlayMask<Content: View>(_ content: Content) -> some View {
     overlay(content.mask(self))
